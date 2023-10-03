@@ -20,17 +20,16 @@ body{
     position: absolute;
     top: 15em;
     left: 15em;
-    width: 10em;
-    height: 10em;
+    width: 11em;
+    height: 11em;
     background-color: yellow;
     border-radius: 50%;
-    box-shadow: 0 0 50px white;
-    animation: orbit 3s linear infinite;
+    animation: light 2.7s linear infinite;
 }
 .sun h1{
     position: absolute;
-    top: 1.5rem;
-    left: 2rem;
+    top: 2rem;
+    left: 2.5rem;
 }
 .earth,.moon {
     position: absolute;
@@ -49,7 +48,7 @@ body{
     height: 30em;
     top: 5em;
     left: 5em;
-    animation: orbit 36.5s linear infinite;
+    animation: orbit 20s linear infinite;
 }
 
 .earth h4{
@@ -57,6 +56,8 @@ body{
     font-size: 0.4rem;
     top: 1.9rem;
     left: 15.5rem;
+    animation: orbit 5s linear infinite;
+
 }
 .moon{
     /* border:solid 2px red; */
@@ -77,6 +78,7 @@ body{
     width: 3em;
     height: 3em;
     background-color: rgb(0, 110, 255);
+
 }
 .moon::before{
     top: 1em;
@@ -92,9 +94,13 @@ body{
     }
 }
 
-/* @keyframes round {
+@keyframes light {
     to {
-        transform: rotate(360deg) ;
+        box-shadow: 0 0 60px white;
     }
-} */
+
+    from {
+        box-shadow: 0 0 30px white;
+    }
+}
 
